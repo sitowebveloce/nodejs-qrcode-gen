@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: #260052;
+    color: #ffffff;
+}
+
+header img {
+    width: 44px;
+    margin-right: 10px;
+}
+
+header {
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #500168;
+}
+
+header .logo,
+form,
+.container,
+.container figure {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+header form {
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+header form label {
+    align-self: flex-start;
+    font-size: 0.9rem;
+    padding: 2px 0;
+}
+
+header form input,
+header form button {
+    background: transparent;
+    padding: 4px 7px;
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    border-radius: 3px;
+}
+
+header form button {
+    cursor: pointer;
+    margin-top: 5px;
+    transition: .4s ease;
+}
+
+header form button:hover {
+    color: gray;
+    border: 1px solid gray;
+}
+
+header .logo h1 {
+    font-size: 3rem;
+}
+
+.container {
+    flex-direction: column;
+    max-width: 500px;
+    width: 100%;
+    height: calc(100vh - 175px);
+    margin: auto;
+}
+
+.container figure {
+    flex-direction: column;
+}
+
+.container img {
+    cursor: pointer;
+}
+
+figcaption {
+    padding: 3px auto;
+    font-size: 0.9rem;
+}
